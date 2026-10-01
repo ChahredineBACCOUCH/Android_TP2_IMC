@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- Titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titre"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Champ Poids -->
+    <EditText
+        android:id="@+id/etPoids"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/poids_hint"
+        android:inputType="numberDecimal|numberSigned"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Champ Taille -->
+    <EditText
+        android:id="@+id/etTaille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/taille_hint"
+        android:inputType="numberDecimal|numberSigned"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Bouton Calculer -->
+    <Button
+        android:id="@+id/btnCalculer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bouton_calculer"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Bouton Effacer -->
+    <Button
+        android:id="@+id/btnEffacer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bouton_effacer"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Résultat IMC -->
+    <TextView
+        android:id="@+id/tvIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resultat_imc"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Catégorie -->
+    <TextView
+        android:id="@+id/tvCategorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/categorie"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+</LinearLayout>
